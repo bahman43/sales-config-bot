@@ -2,7 +2,7 @@ services:
   - type: worker
     name: sales-config-bot
     runtime: node
-    buildCommand: npm ci
+    buildCommand: npm install
     startCommand: npm start
     envVars:
       - key: BOT_TOKEN
