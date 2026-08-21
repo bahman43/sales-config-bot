@@ -1,0 +1,19 @@
+services:
+  - type: worker
+    name: sales-config-bot
+    runtime: node
+    buildCommand: npm ci
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: CARD_NUMBER
+        sync: false
+      - key: CARD_HOLDER
+        sync: false
+      - key: SUPPORT_USERNAME
+        sync: false
